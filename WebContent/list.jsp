@@ -20,10 +20,10 @@ h1{
 }
 #tab1{
 	text-align:center;
-	width:80%;
+	width:100%;
 }
 #p1{
-	margin:0 0 0 190px;
+	padding:0 0 0 5px;
 	border-top:4px solid #28E7FF;
 }
 .line{
