@@ -16,7 +16,7 @@
 	String nickname=request.getParameter("nickname");
 	
 	try{
-		String sql="insert into member0118 values(?,?,?)";
+		String sql="insert into memberHrd values(?,?,?)";
 		pstmt=conn.prepareStatement(sql);
 		pstmt.setString(1, userName);
 		pstmt.setString(2, password);
@@ -34,9 +34,5 @@
 		e.printStackTrace();
 	}
 %>
-		<script>
-			alert("데이터 등록을 실패하였습니다!");
-			history.back(-1);
-		</script>
 </body>
 </html>

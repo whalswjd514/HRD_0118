@@ -17,7 +17,7 @@
 	String t_userName="", t_pass="", nname="";
 	
 	try{
-		String sql="select userName,password,nickname from member0118 where userName=?";
+		String sql="select userName,password,nickname from memberHrd where userName=?";
 		pstmt=conn.prepareStatement(sql);
 		pstmt.setString(1, userName);
 		rs=pstmt.executeQuery();
@@ -31,7 +31,7 @@
 				<script>
 					var nname="<%=nname %>";
 					console.log(nname);
-					alert(nname+"님이 로그인 되었습니다.");
+					alert(nname+"님이 로그인 하였습니다.");
 				</script>
 				<%
 			}else{
